@@ -2,8 +2,8 @@
 
 Interactive website built to familiarize with React states and effects. It was based on the https://www.figma.com/file/ArN9tILyOsXrjgIFYXH5WT/Tenzies from the Learn React JS tutorial at Scrimba.com. I improved a design of dice faces, instead of just number it now displays dots on it. I also added functionality to track a time of the game and number of turns before the game is won.
 
-![Game](/gameScreenshot.jpg?raw=true)
-![Finished Game](/FinishedgameScreenshot.jpg?raw=true)
+![Game](/game.png?raw=true)
+![Finished Game](/gameFinished.png?raw=true)
 
 ## Available Scripts
 
