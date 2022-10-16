@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Karla", sans-serif;
+    height: 100%;
+    width: 100%;
+    background-color: #0B2434;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#root {
+    display: flex;
+    align-items: center;
+}
+
+main {
+    margin: 30px 20px;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    height: 650px;
+    width: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title {
+    margin: 0;
+    font-size: 60px;
+    color: #2B283A;
+}
+
+.description {
+    max-width: 400px;
+    letter-spacing: 1px;
+    color: #4A4E74;
+    text-align: center;
+    margin: 0;
+    font-size: 20px;
+    height: 70px;
+}
+
+/* DICE */
+
+.dice {
+    /* DESIGN */
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 10%;
+    cursor: pointer;
+    padding: 10px;
+    background-color: white;
+    width: 70px;
+    display: grid;
+    grid-template-areas:
+        "a . c"
+        "e g f"
+        "d . b";
+    justify-items: center;
+    align-items: center;
+}
+
+.dot {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0);
+}
+
+.dot:nth-child(2) {
+    grid-area: b;
+}
+
+.dot:nth-child(3) {
+    grid-area: c;
+}
+
+.dot:nth-child(4) {
+    grid-area: d;
+}
+
+.dot:nth-child(5) {
+    grid-area: e;
+}
+
+.dot:nth-child(6) {
+    grid-area: f;
+}
+
+.dot:nth-child(odd):last-child {
+    grid-area: g;
+}
+
+.dice-container {
+    display: grid;
+    column-gap: 15px;
+    row-gap: 25px;
+    grid-template: repeat(2, 75px) / repeat(5, 75px);
+}
+
+.roll-button {
+    /* TEXT */
+    font-family: 'Karla';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 19px;
+    color: #FFFFFF;
+    padding: 15px 0px;
+    width: 150px;
+
+    /* BUTTON */
+    border-style: none;
+    background: #5035FF;
+    box-shadow: 0px 3.2px 7.68px rgba(0, 0, 0, 0.18);
+    border-radius: 3.81277px;
+    cursor: pointer;
+}
+
+.roll-button:active {
+    box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+}
